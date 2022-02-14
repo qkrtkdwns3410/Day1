@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Day1</string>
+    <string name="person_name"> 박상준</string>
+    
 </resources>

@@ -13,7 +13,33 @@
             android:theme="@style/Theme.Day1"
             >
         <activity
-                android:name=".MainActivity"
+                android:name=".rectTest"
+                android:exported="false"
+                />
+        <activity
+                android:name=".FingerDrawable"
+                android:exported="true"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+                android:name=".ImageActivity"
+                android:exported="false"
+                />
+        <activity
+                android:name=".EditText"
+                android:exported="false"
+                />
+        <activity
+                android:name=".RadioActivity"
+                android:exported="true"
+                />
+        <activity
+                android:name=".ScrollActivity"
                 android:exported="true"
                 >
             <intent-filter>
