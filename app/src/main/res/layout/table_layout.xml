@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    
+    <!--테이블 레이아웃.-->
+    <!--stretchColumns Row> 태그안의 뷰는 순서대로 0 1 2 같은 칼럼 인덱스를 자동으로 부여받습니다.-->
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1,2"
+            >
+        <!--테이블 첫번째 행-->
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <!--기본 orientation > horizontal-->
+            <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    
+                    />
+            <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    
+                    />
+            <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    
+                    />
+            
+        </TableRow>
+        
+        <!--테이블의 2번째 행-->
+        <!--레이아웃의 2번쨰 행의 너비, 높이를 부모 layout 과 동일하게-->
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            
+            <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    />
+            <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    />
+            <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    />
+            
+        </TableRow>
+        
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <!--해당 텍스트 입력상자가 2개의 컬럼 영역을 가집니다.-->
+            <EditText
+                    android:layout_span="2" />
+            <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Button"
+                    />
+            
+        </TableRow>
+        
+        
+    </TableLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
