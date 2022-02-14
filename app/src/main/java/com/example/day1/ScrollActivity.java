@@ -31,9 +31,7 @@ public class ScrollActivity extends AppCompatActivity {
       protected void onCreate(@Nullable Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.scrollview);
-            
-            
-           
+
             scrollView = findViewById(R.id.scrollView);
             imageView = findViewById(R.id.imageView);
             scrollView.setHorizontalScrollBarEnabled(true);
