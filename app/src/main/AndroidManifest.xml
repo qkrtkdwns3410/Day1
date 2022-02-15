@@ -2,7 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.example.day1"
         >
-
+    <!-- allowBackUp : 해당 어플리케이션이 백업 및 복원 인프라에 참여가능한지 여부 || 기본 true -->
+    <!-- icon : 해당 어플의 아이콘 -->
+    <!-- label :  어플리케이션의 제목 -->
+    <!-- roundIcon : 둥근 아이콘 -->
+    <!--
+supportsRtl : 어플리케이션이 오른쪽에서 왼쪽(RTL) 을 지원하는지 여부
+     sdk 17 이상이라면 설정가능
+     그 미만이라면 영향이 없습니다
+    -->
+    <!-- theme : 어플리케이션의 기본 테마. -->
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -11,6 +20,20 @@
             android:supportsRtl="true"
             android:theme="@style/Theme.Day1"
             >
+        <activity
+                android:name=".SampleOrientation"
+                android:exported="true"
+                android:configChanges="orientation|screenSize|keyboardHidden"
+                >
+            <!--방향전환 등을 알수있도록 설정합니다-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+
+            </intent-filter>
+        </activity>
         <activity
                 android:name=".SampleEvent"
                 android:exported="true"
@@ -31,16 +54,7 @@
         <activity
                 android:name=".GravityApplication"
                 android:exported="false"
-                /> <!-- allowBackUp : 해당 어플리케이션이 백업 및 복원 인프라에 참여가능한지 여부 || 기본 true -->
-        <!-- icon : 해당 어플의 아이콘 -->
-        <!-- label :  어플리케이션의 제목 -->
-        <!-- roundIcon : 둥근 아이콘 -->
-        <!--
-supportsRtl : 어플리케이션이 오른쪽에서 왼쪽(RTL) 을 지원하는지 여부
-         sdk 17 이상이라면 설정가능
-         그 미만이라면 영향이 없습니다
-        -->
-        <!-- theme : 어플리케이션의 기본 테마. -->
+                />
         <activity
                 android:name=".LayoutCodeActivity"
                 android:exported="false"

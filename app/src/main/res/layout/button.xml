@@ -3,7 +3,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
     <Button
             android:id="@+id/button"
@@ -12,7 +13,8 @@
             android:text="선택"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center" />
+            android:gravity="center"
+            />
     <!--버튼 gravity 텍스트 중앙 정렬-->
     <!--라디오 버튼 그룹을 생성합니다-->
     <!--horizontal : 수평으로 버튼이 생성
@@ -28,7 +30,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp">
+            android:paddingRight="10dp"
+            >
 
         <RadioButton
                 android:id="@+id/radio01"
@@ -38,7 +41,8 @@
                 android:textColor="#ff55aaff"
                 android:textStyle="bold"
                 android:textSize="24sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                />
 
         <RadioButton
                 android:id="@+id/radio02"
@@ -48,7 +52,8 @@
                 android:textColor="#ff55aaff"
                 android:textStyle="bold"
                 android:textSize="24sp"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck"
+                />
     </RadioGroup>
 
     <LinearLayout
@@ -56,22 +61,30 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
             android:orientation="horizontal"
-            android:paddingTop="20dp">
+            android:paddingTop="20dp"
+            >
 
-        <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="하루종일"
-                android:textSize="24sp"
-                android:paddingRight="10dp"
-                android:textColor="#ff55aaff" />
+        <!--        <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="하루종일"-->
+        <!--                android:textSize="24sp"-->
+        <!--                android:paddingRight="10dp"-->
+        <!--                android:textColor="#ff55aaff" />-->
 
         <CheckBox
                 android:id="@+id/allDay"
+                android:text="하루종일"
+                android:textColor="#ff55aaff"
+                android:textSize="24sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minWidth="48dp"
-                android:minHeight="48dp" />
+                android:minHeight="48dp"
+                android:button="@null"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                />
+        />
     </LinearLayout>
 
 </LinearLayout>

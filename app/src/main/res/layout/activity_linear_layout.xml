@@ -4,27 +4,40 @@
         android:orientation="vertical"
         tools:context=".MainActivity"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
+
     <!--수직방향으로!-->
     <!--tools:context가 있으면 좋은 이유는 레이아웃 파일이 알아서 적혀져 있는 Activity와 매칭을 해주는 편리성 때문입니다.-->
-
-    <Button
-            android:id="@+id/button"
-            android:text="Button"
+    <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <Button
+                android:id="@+id/button"
+                android:text="Button1"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                />
+    </LinearLayout>
+
 
     <Button
             android:id="@+id/button2"
-            android:text="Button"
+            android:text="Button2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
     <Button
             android:id="@+id/button3"
-            android:text="Button"
+            android:text="Button3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            />
 
 
 </LinearLayout>

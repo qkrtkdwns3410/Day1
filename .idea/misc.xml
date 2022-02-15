@@ -7,9 +7,11 @@
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/back_drawable.xml" value="0.2815" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/border_drawable.xml" value="0.2815" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/finger_drawabel.xml" value="0.2815" />
+        <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/finger_drawable.xml" value="0.3515" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2815" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/rect_drawable.xml" value="0.2815" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/drawable/toast.xml" value="0.264" />
+        <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout-land/activity_sample_orientation.xml" value="0.12" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_constraint_layout.xml" value="0.28717948717948716" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_edit_text.xml" value="0.27708333333333335" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_finger_drawable.xml" value="0.27708333333333335" />
@@ -22,6 +24,7 @@
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_rect_test.xml" value="0.27708333333333335" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_sample_dialog.xml" value="0.2947916666666667" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_sample_event.xml" value="0.1705282669138091" />
+        <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_sample_orientation.xml" value="0.267840593141798" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/activity_toast.xml" value="0.32592592592592595" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/baseline.xml" value="0.16799999999999998" />
         <entry key="..\:/Users/letscombine/AndroidStudioProjects/Day1/app/src/main/res/layout/button.xml" value="0.27708333333333335" />
