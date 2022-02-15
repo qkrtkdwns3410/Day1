@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
+
     <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
@@ -12,8 +12,15 @@
             android:text="선택"
             android:textSize="24sp"
             android:textStyle="bold"
-            android:gravity="center"
-            />
+            android:gravity="center" />
+    <!--버튼 gravity 텍스트 중앙 정렬-->
+    <!--라디오 버튼 그룹을 생성합니다-->
+    <!--horizontal : 수평으로 버튼이 생성
+        marginTop = 위 부분과 20dp만큼의 여백
+        paddingLeft right : 해당 그룹 프레임 내부에 왼쪽 오른쪽에  10dp 만큼의 공간이 확보됩니다.
+    -->
+
+
     <RadioGroup
             android:id="@+id/radioGroup1"
             android:layout_width="wrap_content"
@@ -21,8 +28,8 @@
             android:orientation="horizontal"
             android:layout_marginTop="20dp"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            >
+            android:paddingRight="10dp">
+
         <RadioButton
                 android:id="@+id/radio01"
                 android:layout_width="wrap_content"
@@ -31,7 +38,8 @@
                 android:textColor="#ff55aaff"
                 android:textStyle="bold"
                 android:textSize="24sp"
-                />
+                tools:ignore="TouchTargetSizeCheck" />
+
         <RadioButton
                 android:id="@+id/radio02"
                 android:layout_width="wrap_content"
@@ -40,28 +48,30 @@
                 android:textColor="#ff55aaff"
                 android:textStyle="bold"
                 android:textSize="24sp"
-                />
+                tools:ignore="TouchTargetSizeCheck" />
     </RadioGroup>
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center_horizontal"
             android:orientation="horizontal"
-            android:paddingTop="20dp"
-            >
+            android:paddingTop="20dp">
+
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="하루종일"
                 android:textSize="24sp"
                 android:paddingRight="10dp"
-                android:textColor="#ff55aaff"
-                />
+                android:textColor="#ff55aaff" />
+
         <CheckBox
                 android:id="@+id/allDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                />
+                android:minWidth="48dp"
+                android:minHeight="48dp" />
     </LinearLayout>
 
 </LinearLayout>

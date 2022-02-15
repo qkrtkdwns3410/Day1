@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-        package="com.example.day1">
+        package="com.example.day1"
+        >
 
     <application
             android:allowBackup="true"
@@ -8,11 +9,29 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/Theme.Day1">
+            android:theme="@style/Theme.Day1"
+            >
+        <activity
+                android:name=".SampleEvent"
+                android:exported="true"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <!--
+                action 은 액티비티가 호출될 시 수행되는 동작이나, 특정 상태를 정의합니다 (수행할 액션 이름)
+
+                android:name="android.intent.action.MAIN
+                >> ACTION_MAIN 을 실행합니다.
+                -->
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 수행할 액션(동작, 상태)에 대한 추가적인 정보를 정의합니다 (특징 정의) -->
+
+            </intent-filter>
+        </activity>
         <activity
                 android:name=".GravityApplication"
-                android:exported="false" />
-        <!-- allowBackUp : 해당 어플리케이션이 백업 및 복원 인프라에 참여가능한지 여부 || 기본 true -->
+                android:exported="false"
+                /> <!-- allowBackUp : 해당 어플리케이션이 백업 및 복원 인프라에 참여가능한지 여부 || 기본 true -->
         <!-- icon : 해당 어플의 아이콘 -->
         <!-- label :  어플리케이션의 제목 -->
         <!-- roundIcon : 둥근 아이콘 -->
@@ -24,20 +43,25 @@ supportsRtl : 어플리케이션이 오른쪽에서 왼쪽(RTL) 을 지원하는
         <!-- theme : 어플리케이션의 기본 테마. -->
         <activity
                 android:name=".LayoutCodeActivity"
-                android:exported="false" /> <!-- name : 액티비티를 구현하는 클래스의 이름 -->
+                android:exported="false"
+                /> <!-- name : 액티비티를 구현하는 클래스의 이름 -->
         <!-- exported : android:exported 가 "false" 로 설정된 경우, 해당 Activity 는 같은 앱 또는 사용자 ID 가 같은 앱에서만 시작할 수 있습니다. : true인 경우에는 다른 앱에서 해당 액티비티를 실행가능합니다 >> 예제 하나에 충첩시켜서 보려면 true로 설정해야했습니다. -->
         <activity
                 android:name=".SampleDialog"
-                android:exported="true" />
+                android:exported="true"
+                />
         <activity
                 android:name=".ToastApplication"
-                android:exported="true" />
+                android:exported="true"
+                />
         <activity
                 android:name=".rectTest"
-                android:exported="true" />
+                android:exported="true"
+                />
         <activity
                 android:name=".FingerDrawable"
-                android:exported="true">
+                android:exported="true"
+                >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <!--
@@ -53,16 +77,20 @@ supportsRtl : 어플리케이션이 오른쪽에서 왼쪽(RTL) 을 지원하는
         </activity>
         <activity
                 android:name=".ImageActivity"
-                android:exported="false" />
+                android:exported="false"
+                />
         <activity
                 android:name=".EditText"
-                android:exported="false" />
+                android:exported="false"
+                />
         <activity
                 android:name=".RadioActivity"
-                android:exported="true" />
+                android:exported="true"
+                />
         <activity
                 android:name=".ScrollActivity"
-                android:exported="true">
+                android:exported="true"
+                >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
