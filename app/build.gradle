@@ -3,6 +3,9 @@ plugins {
 }
 
 android {
+    splits.abi.enable = false
+    splits.density.enable = false
+
     compileSdk 32
 
     defaultConfig {
